@@ -55,11 +55,12 @@ func AddBookApi(c *gin.Context) {
 	})
 }
 
-// BorrowBookApi 借书
-func BorrowBookApi(c *gin.Context) {
+// UpdateBookStatusApi 归还图书
+func UpdateBookStatusApi(c *gin.Context) {
 	var book models.Book
 	id, _ := strconv.ParseInt(c.Param("id"), 10, 0)
-	err := book.Update(id, false)
+	status, _ := strconv.ParseBool(c.Param("status"))
+	err := book.Update(id, status)
 	if err != nil {
 		c.JSON(http.StatusOK, gin.H{
 			"message": err.Error(),
@@ -67,23 +68,7 @@ func BorrowBookApi(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusOK, gin.H{
-		"message": "借书成功",
-	})
-}
-
-// ReturnBookApi 归还图书
-func ReturnBookApi(c *gin.Context) {
-	var book models.Book
-	id, _ := strconv.ParseInt(c.Param("id"), 10, 0)
-	err := book.Update(id, true)
-	if err != nil {
-		c.JSON(http.StatusOK, gin.H{
-			"message": err.Error(),
-		})
-		return
-	}
-	c.JSON(http.StatusOK, gin.H{
-		"message": "还书成功",
+		"message": "成功",
 	})
 }
 func BorrowList(c *gin.Context) {

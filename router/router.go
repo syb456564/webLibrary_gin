@@ -8,8 +8,8 @@ import (
 func InitRouter() *gin.Engine {
 	router := gin.Default()
 	router.GET("/books", apis.ListBooksApi)
-	router.POST("/addBook", apis.AddBookApi)
-	router.PUT("/borrow/:id", apis.BorrowBookApi)
-	router.PUT("/return/:id", apis.ReturnBookApi)
+	router.POST("/book", apis.AddBookApi)
+	router.PUT("/book/:id/:status", apis.UpdateBookStatusApi)
+	//router.PUT("/book/:id/:status", apis.ReturnBookApi)
 	return router
 }
