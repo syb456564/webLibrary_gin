@@ -22,6 +22,13 @@ func (book *Book) GetAll() (books []Book, err error) {
 	return
 }
 
+func (book *Book) GetBook(id int64) (b Book, err error) {
+	if err = database.DbBook.First(&b, id).Error; err != nil {
+		return
+	}
+	return
+}
+
 // Add 添加图书
 func (book Book) Add() (id int, err error) {
 	result := database.DbBook.Create(&book)

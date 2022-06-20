@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83f067e6-3fa8-4e59-8229-ff04425252fd" name="变更" comment="init">
+    <list default="true" id="83f067e6-3fa8-4e59-8229-ff04425252fd" name="变更" comment="以URL定位资源，以参数获取动作">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apis/book.go" beforeDir="false" afterPath="$PROJECT_DIR$/apis/book.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/book.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/book.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +81,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="以URL定位资源，以参数获取动作" />
+    <option name="LAST_COMMIT_MESSAGE" value="以URL定位资源，以参数获取动作" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

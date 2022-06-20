@@ -2,6 +2,7 @@ package apis
 
 import (
 	"github.com/gin-gonic/gin"
+	"log"
 	"mygin.web/models"
 	"net/http"
 	"strconv"
@@ -34,6 +35,24 @@ func ListBooksApi(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"data": listBook,
 	})
+}
+
+func GetBookApi(c *gin.Context) {
+	var book models.Book
+	id, _ := strconv.ParseInt(c.Query("id"), 10, 0)
+	log.Println(id)
+	b, err := book.GetBook(id)
+	if err != nil {
+		c.JSON(http.StatusOK, gin.H{
+			"code":    err,
+			"message": "查询失败",
+		})
+		return
+	} else {
+		c.JSON(http.StatusOK, gin.H{
+			"message": b,
+		})
+	}
 }
 
 // AddBookApi 添加图书
