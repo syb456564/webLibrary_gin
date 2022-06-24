@@ -11,6 +11,5 @@ func InitRouter() *gin.Engine {
 	router.GET("/book", apis.GetBookApi)
 	router.POST("/book", apis.AddBookApi)
 	router.PUT("/book/:id/:status", apis.UpdateBookStatusApi)
-	//router.PUT("/book/:id/:status", apis.ReturnBookApi)
 	return router
 }

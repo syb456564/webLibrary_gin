@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83f067e6-3fa8-4e59-8229-ff04425252fd" name="变更" comment="新增查询单本书籍">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ccbac59-0e61-475c-a223-286f5bd33423.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4ccbac59-0e61-475c-a223-286f5bd33423.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="83f067e6-3fa8-4e59-8229-ff04425252fd" name="变更" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +78,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="以URL定位资源，以参数获取动作" />
     <MESSAGE value="新增查询单本书籍" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增查询单本书籍" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
