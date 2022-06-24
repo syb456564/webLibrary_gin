@@ -8,6 +8,7 @@ import (
 	"strconv"
 )
 
+// ListBooksApi 列表输出图书信息
 func ListBooksApi(c *gin.Context) {
 	var book models.Book
 	var listBook = make(map[string]int)
@@ -37,6 +38,7 @@ func ListBooksApi(c *gin.Context) {
 	})
 }
 
+// GetBookApi 输出特定图书信息
 func GetBookApi(c *gin.Context) {
 	var book models.Book
 	id, _ := strconv.ParseInt(c.Query("id"), 10, 0)
@@ -89,7 +91,4 @@ func UpdateBookStatusApi(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"message": "成功",
 	})
-}
-func BorrowList(c *gin.Context) {
-
 }
